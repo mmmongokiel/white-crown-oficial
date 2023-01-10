@@ -1,0 +1,116 @@
+/* Modularizacion */
+@import "colores";
+@import "fuentes";
+
+/* Estilos generales */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1{
+    font-size: $presize;
+    font-family: $prefont;
+}
+
+.seccion-oscura{
+    color: $color1;
+    background-color: $color2;
+}
+
+.seccion-clara{
+    color: $color2;
+    background-color: $color1;
+}
+
+.seccion-titulo{
+    font-size: $presize;
+    padding: 15px 0;
+    font-family: $prefont;
+}
+
+.seccion-descripcion{
+    font-size: $size1;
+    color: $color2;
+}
+
+.seccion-texto{
+    font-size: $sizetext;
+}
+
+.btn-secondary{
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+.texto-negro{
+    color: $color2;
+}
+
+.texto-blanco{
+    color: $color1;
+}
+
+/* Barra de navegacion */
+
+.barra_nav{
+    padding: 0px 0px 35px 0px;
+
+    .navbar{
+        padding: 2rem;
+        background-color: $color2;
+    
+        .navbar-collapse{
+            align-items: center;
+             justify-content: space-around;
+
+            .navbar-nav{
+        
+                .nav-item a{
+                 color: $color1;
+                }
+            }
+        }
+    }
+}
+
+.navbar{
+
+    .iconos-navbar a{
+        width: 50px; 
+        height: 50px; 
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        margin: 10px;
+        border: 2px solid $color1;
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+        &hover{
+            background-color: $color2;
+         border: 2px solid $precolor;
+         }
+    }
+}
+
+.iconos-navbar i{
+    color:$color1;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+    &hover{
+        color: $color2;
+    }
+}
+
+/* Alerta */
+
+.alerta{
+
+    .alert{
+        text-align: center;
+    }
+}
