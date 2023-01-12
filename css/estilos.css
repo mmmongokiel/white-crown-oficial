@@ -7,8 +7,12 @@
   justify-content: center;
 }
 
+.body{
+  margin: 0;
+}
+
 .h1 {
-  font-size: 22px;
+  font-size: 25px;
   font-family: "Sofia Sans Condensed", sans-serif;
 }
 
@@ -28,18 +32,19 @@
 }
 
 .seccion-titulo {
-  font-size: 22px;
+  font-size: 3rem;
   padding: 15px 0;
   font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 .seccion-descripcion {
-  font-size: 16px;
-  color: black;
+  font-size: 15px;
+  color: grey;
 }
 
 .seccion-texto {
-  font-size: 12px;
+  font-size: 1.6rem;
+  color: grey;
 }
 
 .btn-secondary {
@@ -115,46 +120,162 @@
 
 .hero{
   background-color: white;
-  min-height: 310px;
+  width: 100%;
+  height: 100%;
   text-align: center;
-}
-
-.hero-principal{
-  padding: 3rem;
-}
-
-.hero-principal h2{
-  font-size: 1.5rem;
-  color: #615151;
-}
-
-.hero-imagen-prenda{
-  border: 8px solid rgb(0, 0, 0);
-  width: 400px;
-  height: 400px;
   margin: 20px;
 }
-/* Sobre mi */
 
-.productos{
-  height: 500px;
-  padding: 10px;
+.hero .carousel{
+  max-width: 100%;
 }
 
-.productos .contenedor{
-  max-width: 600px;
+.carousel-item{
+  height: 350px;
+}
+
+.carousel-item .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-producto-imagen{
+  height: 180px;
+  width: 180px;
+  margin: 10px 10px 20px 10px;
+}
+
+.hero-ropa-texto{
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Sofia Sans Condensed", sans-serif;
+}
+
+.hero-producto-info{
+  font-weight: bold;
   text-align: center;
 }
 
-/* Experiencia */
-
-.experiencia{
-  padding: 100px 50px 80px 50px;
+.hero-producto-info p{
+  margin-bottom: 0;
 }
 
-.experiencia .columna {
+.hero-producto-info .precio{
+  font-size: 1.2rem;
+}
+
+.hero-producto-info .fabricacion{
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+}
+
+/* Seccion donacion*/
+
+.donacion{
+  padding: 5px 5px;
+}
+
+.donacion .contenedor{
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Seccion contactos */
+
+
+.contacto .container{
+  max-width: 90%;
+  min-height: 20%;
   padding: 20px;
-  border: 2.5px solid black;
+}
+
+.contacto .rectangulo{
+  background-color:rgb(0, 179, 250);
+  border-radius: 10px;
+}
+
+.contacto .row{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto .seccion-titulo{
+  color: white;
+}
+
+.contacto .descripcion{
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 0;
+}
+
+
+.contacto button{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: transparent;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 100px;
+  transition: all 0.2 ease-in-out;
+}
+
+.contacto button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.contacto button i{
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  transition: all 0.2 ease-in-out;
+}
+
+.contacto button:hover i{
+  color: black;
+}
+
+
+/* Seccion nosotros */
+
+.nosotros{
+  background-color: white;
+  padding: 20px 0px 45px 0px;
+  text-align: center;
+  margin:20px;
+}
+
+.nosotros-imagen-integrantes{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#seccion-texto-nosotros{
+  color:black;
+  font-size: 20px;
+  margin: 30px;
+}
+
+/* Seccion objetivos */
+
+.objetivos{
+  padding: 0px 50px 50px 50px;
+}
+
+.objetivos .columna {
+  padding: 20px;
+  border: 2.5px solid white;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,25 +283,28 @@
   transition: all 0.2s ease-in;
 }
 
-.experiencia .columna:hover{
+.objetivos .columna:hover{
   color: white;
   background-color:rgb(80, 79, 79)
 }
 
-.experiencia-titulo{
+.objetivos .seccion-titulo{
+  color: white;
+}
+
+.objetivos-titulo{
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
 }
 
-.experiencia i{
+.objetivos i{
   font-size: 2.5rem;
-  color:rgb(80, 79, 79);
-  background-color: rgb(2, 2, 2) ;
+  color:rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255) ;
   padding: 8px 20px;
   border-radius: 50%;
 }
-
 
 .badges-contenedor{
   font-size: 15px;
@@ -191,6 +315,36 @@
 .badge{
   margin: 5px;
 }
+
+/* Seccion ubicacion  */
+
+.ubicacion{
+  background-color: white;
+  padding: 10px 0px 20px 0px;
+  text-align: center;
+  margin: 20px;
+}
+
+#mapa{
+  margin: 20px;
+}
+
+/* Seccion productos */
+
+.wh-productos{
+  height: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.wh-productos .contenedor{
+  max-width: 100%;
+}
+
+.wh-productos .seccion-titulo{
+  text-align: center;
+}
+
 
 /* Proyectos */
 
@@ -250,127 +404,24 @@
   margin: 10px;
 }
 
-/* Testimonios/Clientes */
+/* Footer */ 
 
-.testimonios{
-  padding: 40 40px 80px 40px;
-}
-
-.testimonios .carousel{
-  max-width: 800px;
-}
-
-.carousel-item{
-  height: 500px;
-}
-
-.carousel-item .container{
+#footer{
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items:center; 
-  justify-content: center;
 }
-
-.testimonio-imagen{
-  height: 150px;
-  width: 150px;
-  margin: 10px 10px 20px 10px;
-  
-}
-
-.testimonio-texto{
-  max-width: 70%;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Barlow Condensed', sans-serif;
-}
-
-.testimonio-info{
-  font-weight: bold;
-  text-align: center;
-}
-
-.testimonio-info p{
-  margin-bottom: 0;
-}
-
-.testimonio-footer .cliente{
-  font-size: 1.2rem;
-}
-
-.testimonio-info .cargo{
-  font-size: 0.9rem;
-}
-
-/* Contacto */
-
-.contacto .container{
-  max-width: 1100px;
-  min-height: 200px;
-}
-
-.contacto .rectangulo{
-  margin-top: -5rem;
-  background-color:rgb(0, 179, 250);
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px 2px white;
-}
-
-.contacto .row{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contacto .descripcion{
-  color: white;
-  font-size: 1.2rem;
-  padding: 12px 0;
-}
-
-.contacto .seccion-titulo{
-  padding: 0px 0;
-}
-
-.contacto button{
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  background-color: transparent;
-  border: 2px solid rgb(255, 255, 255);
-  padding: 1.25em 2em;
-  margin: 10px;
-  border-radius: 100px;
-  transition: all 0.2 ease-in-out;
-}
-
-.contacto button:hover{
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-.contacto button i{
-  color: rgb(255, 255, 255);
-  font-size: 1.3rem;
-  transition: all 0.2 ease-in-out;
-}
-
-.contacto button:hover i{
-  color: black;
-}
-
-/* Footer */
 
 .footer{
-  min-height: 500px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-logo{
   height: 100px;
   width: 100px;
-  margin: 10px;
+  margin: 5px;
 }
 
 .footer-texto{
@@ -424,19 +475,13 @@
 }
 
 @media screen and (max-width: 800px){
-  .testimonio-imagen{
+  .hero-producto-imagen{
       height: 120px;
       width: 120px;
   }
 
-  .testimonio-texto{
+  .hero-ropa-texto{
       font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .hero-inferior-imagen{
-      max-width: 600px;
   }
 }
 
@@ -450,4 +495,9 @@
   }
 }
 
+@media screen and (max-width: 800px){
+  .navbar{
+    background-color: grey;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */
